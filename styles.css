@@ -1,0 +1,39 @@
+  *{
+    box-sizing: border-box;
+  }
+  .cell{
+    border: 2px solid blue;
+    border-radius: 5px;
+    font-size: 50px;
+    color: white;
+    height:100px;
+    line-height: 100px;
+  }
+  .cell:hover{
+    box-shadow: 5px 5px 4px blue;
+  }
+  #choose{
+    min-height: 200px;
+    line-height: 200px;
+  }
+  body, html{
+    background-image: url(https://wallpapercave.com/wp/wp4946389.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height:100%;
+  }
+  #game{
+    display: none;
+  }
+  @media only screen and (max-width: 400px){
+    .cell{
+      font-size: 30px;
+      height: 75px;
+      line-height: 75px;
+    }
+    #choose{
+      min-height: 75px;
+      line-height: 75px;
+    }
+  }
