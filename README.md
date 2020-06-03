@@ -1,2 +1,2 @@
 # TIC_TAC_TOE_2.0
-A graphical tic tac toe game.
+Open TIC_TAC_TOE_2.0.html in any browser and 'Enjoy' the game!
