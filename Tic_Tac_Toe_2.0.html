@@ -21,7 +21,10 @@
   </head>
   <body>
     <h1 class="text-center">TIC TAC TOE</h1>
-    <h1 class="text-primary m-2 text-center" id="status">ENJOY</h1>
+    <h1 class="text-primary text-center" id="status">ENJOY</h1>
+    <div style="margin-top: 20px;">
+      <span class="p-3" id="sc">Choose Mode</span>
+    </div>
     <div class="text-center" id="choose">
       <button type="button" class="btn btn-primary my-auto" onclick="show(1)">ONE PLAYER</button>
       <button type="button" class="btn btn-primary my-auto" onclick="show(2)">TWO PLAYER</button>
@@ -79,6 +82,6 @@
           </div>
         </div>
     </div>
-    <h1 class="text-center"><button class="btn btn-primary" onclick="startGame(); hide();">Reset</button></h1>
+    <h1 class="text-center"><button class="btn btn-primary" onclick="reset()">Reset</button></h1>
   </body>
 </html>
