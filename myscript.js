@@ -2,7 +2,7 @@
 
 const COMPUTER = "&times;";
 const PLAYER = "&Omicron;";
-var players=1,turn=1;
+var players=1,turn=1,score1=0,score2=0;
 
 var board = new Array(3); //Declaration of board
 
@@ -64,9 +64,16 @@ function evaluate(){
 
 function winner(state){
   if(players==2){
-    if(state==-10) alert("PLAYER \'O\' WON!");
-    else if(state==10) alert("PLAYER \'X\' WON!");
+    if(state==-10){
+      score1++;
+      alert("PLAYER \'O\' WON!");
+    }
+    else if(state==10){
+      alert("PLAYER \'X\' WON!");
+      score2++;
+    }
     else alert("TIE!");
+    document.getElementById('sc').innerHTML="O:   "+score1+" |  X:   "+score2;
     startGame();
     return;
   }
@@ -197,9 +204,17 @@ function fun(row, col){
     return;
   }
 }
-
+function reset(){
+  score1=0;
+  score2=0;
+  document.getElementById('sc').innerHTML="Choose Mode";
+  startGame();
+  hide();
+}
 function show(a){
   players=a;
+  if(players==1) document.getElementById('sc').innerHTML="ONE PLAYER";
+  else document.getElementById('sc').innerHTML="O:   0 | X:   0";
   document.getElementById('choose').style.display = "none";
   document.getElementById('game').style.display = "block";
 }
