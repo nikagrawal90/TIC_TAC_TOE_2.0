@@ -22,6 +22,7 @@
     background-size: cover;
     background-position: center;
     height:100%;
+    text-align: center;
   }
   #game{
     display: none;
@@ -36,4 +37,13 @@
       min-height: 75px;
       line-height: 75px;
     }
+  }
+  #sc{
+    border: 3px solid red;
+    background-color: black;
+    color:white;
+    display: inline-block;
+    width: 200px;
+    height: 70px;
+    line-height:
   }
